@@ -7,7 +7,7 @@ Needs MaterialUI with theme, firebase and react.
 1. Install the firebase dependency via npm (tested with firebase 5.3.0)
 
 ```
-npm install firebase
+npm install firebase --save
 ```
 
 2. Set Callback Method
@@ -15,6 +15,8 @@ npm install firebase
 The callback for the auth state change must be initialized as high as possible in the component hirarchy. For example in the App.tsx
 
 ```
+import Firebase from './FirebaseApp';
+...
 componentWillMount() {
         // Callback for Auth State Changes
         if (Firebase.auth) {
@@ -51,9 +53,9 @@ window.open('Url or endpoit', _blank) is called for the urls
 
 ```
     <Authenticator
-        onSuccess={() => // Action after Success}
-        privacyPolicyUrl={// Url or endpoint to the privacyPolicy}
-        siteNoticeUrl={// Url or endpoint to the siteNotice}
+        onSuccess={() => /* Action after Success */ }
+        privacyPolicyUrl={/* Url or endpoint to the privacyPolicy */ }
+        siteNoticeUrl={/* Url or endpoint to the siteNotice */ }
     />
 ```
 
