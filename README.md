@@ -1,6 +1,6 @@
 # Firebase Authenticator
 
-[logo]: https://github.com/innFactory/react-firebase-auth-example/assets/screenshot1.png "Example Screenshot"
+<img src="assets/screenshot1.png" />
 
 Needs MaterialUI with theme, firebase and react.
 
